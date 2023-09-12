@@ -1,9 +1,9 @@
 import os
 import subprocess
-os.chdir("..")  # Спуститься на один уровень ниже
-folder_path = "/content/ui/diamon"
-subprocess.run(["mkdir", "-p", f"{folder_path}/extensions/batchlinks-webui"])
+current_dir = os.getcwd()  # Получить текущую директорию
+folder_path = os.path.join(current_dir, "extensions", "batchlinks-webui")  # Создать путь к новой папке
+os.makedirs(folder_path, exist_ok=True)  # Создать папку
 repo_url = "https://github.com/etherealxx/batchlinks-webui.git"
-subprocess.run(["git", "clone", repo_url, f"{folder_path}/extensions/batchlinks-webui"])
+subprocess.run(["git", "clone", repo_url, folder_path])  # Клонировать репозиторий
 
 
