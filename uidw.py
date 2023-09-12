@@ -5,5 +5,5 @@ commands = [
     # Добавьте дополнительные команды загрузки стилей, если есть
 ]
 for command in commands:
-subprocess.run(command, shell=True)
+    subprocess.run(command, shell=True)
 
