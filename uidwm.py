@@ -1,4 +1,4 @@
-/content/ui/diamon/..
+os.chdir("..")
 # Указываем путь к целевой папке 2
 folder_path = "/content/ui/extensions"
 # Создаем папку с именем репозитория
