@@ -1,0 +1,13 @@
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_style_sd14v1.pth -d /content/ui/extensions/sd-webui-controlnet/models -o t2iadapter_style_sd14v1.pth
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_sketch_sd14v1.pth -d /content/ui/extensions/sd-webui-controlnet/models -o t2iadapter_sketch_sd14v1.pth
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_seg_sd14v1.pth -d /content/ui/extensions/sd-webui-controlnet/models -o t2iadapter_seg_sd14v1.pth
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_openpose_sd14v1.pth -d /content/ui/extensions/sd-webui-controlnet/models -o t2iadapter_openpose_sd14v1.pth
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_keypose_sd14v1.pth -d /content/ui/extensions/sd-webui-controlnet/models -o t2iadapter_keypose_sd14v1.pth
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_depth_sd14v1.pth -d /content/ui/extensions/sd-webui-controlnet/models -o t2iadapter_depth_sd14v1.pth
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_color_sd14v1.pth -d /content/ui/extensions/sd-webui-controlnet/models -o t2iadapter_color_sd14v1.pth
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_canny_sd14v1.pth -d /content/ui/extensions/sd-webui-controlnet/models -o t2iadapter_canny_sd14v1.pth
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_canny_sd15v2.pth -d /content/ui/extensions/sd-webui-controlnet/models -o t2iadapter_canny_sd15v2.pth
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_depth_sd15v2.pth -d /content/ui/extensions/sd-webui-controlnet/models -o t2iadapter_depth_sd15v2.pth
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_sketch_sd15v2.pth -d /content/ui/extensions/sd-webui-controlnet/models -o t2iadapter_sketch_sd15v2.pth
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_zoedepth_sd15v1.pth -d /content/ui/extensions/sd-webui-controlnet/models -o t2iadapter_zoedepth_sd15v1.pth
+
