@@ -27,3 +27,27 @@ repo_url = "https://github.com/nonnonstop/sd-webui-3d-open-pose-editor.git"
 subprocess.run(["git", "clone", repo_url, folder_path4])  # Клонировать репозиторий
 
 
+
+
+current_dir = os.getcwd()  # Получить текущую директорию
+folder_path5 = os.path.join(current_dir, "extensions", "stable-diffusion-webui-rembg")  # Создать путь к новой папке
+os.makedirs(folder_path5, exist_ok=True)  # Создать папку
+repo_url = "https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg.git"
+subprocess.run(["git", "clone", repo_url, folder_path5])  # Клонировать репозиторий
+
+
+current_dir = os.getcwd()  # Получить текущую директорию
+folder_path6 = os.path.join(current_dir, "extensions", "stable-diffusion-webui-aesthetic-gradients")  # Создать путь к новой папке
+os.makedirs(folder_path6, exist_ok=True)  # Создать папку
+repo_url = "https://github.com/AUTOMATIC1111/stable-diffusion-webui-aesthetic-gradients.git"
+subprocess.run(["git", "clone", repo_url, folder_path6])  # Клонировать репозиторий
+
+
+
+current_dir = os.getcwd()  # Получить текущую директорию
+folder_path7 = os.path.join(current_dir, "extensions", "stable-diffusion-webui-promptgen")  # Создать путь к новой папке
+os.makedirs(folder_path7, exist_ok=True)  # Создать папку
+repo_url = "https://github.com/AUTOMATIC1111/stable-diffusion-webui-promptgen.git"
+subprocess.run(["git", "clone", repo_url, folder_path7])  # Клонировать репозиторий
+
+
