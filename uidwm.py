@@ -14,7 +14,7 @@ subprocess.run(["git", "clone", repo_url, folder_path2])  # Клонироват
 
 
 current_dir = os.getcwd()  # Получить текущую директорию
-folder_path4 = os.path.join(current_dir, "extensions", "stable-diffusion-webui-aesthetic-gradients")  # Создать путь к новой папке
+folder_path4 = os.path.join(current_dir, "extensions", "aesthetic-gradients")  # Создать путь к новой папке
 os.makedirs(folder_path4, exist_ok=True)  # Создать папку
 repo_url = "https://github.com/AUTOMATIC1111/stable-diffusion-webui-aesthetic-gradients.git"
 subprocess.run(["git", "clone", repo_url, folder_path4])  # Клонировать репозиторий
