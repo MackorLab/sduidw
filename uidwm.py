@@ -20,7 +20,7 @@ sadtalker_path = os.path.join(extensions_path, "SadTalker")  # Путь к па�
 os.makedirs(sadtalker_path, exist_ok=True)  # Создать папку "SadTalker"
 checkpoints_path = os.path.join(sadtalker_path, "checkpoints")  # Путь к папке "checkpoints"
 os.makedirs(checkpoints_path, exist_ok=True)  # Создать папку "checkpoints"
-repo_url3 = "https://huggingface.co/camenduru/SadTalker"
+repo_url3 = "https://huggingface.co/datasets/DmatryMakeev/SadTalker"
 subprocess.run(["git", "clone", repo_url3, checkpoints_path])  # Клонировать репозиторий
 
 
