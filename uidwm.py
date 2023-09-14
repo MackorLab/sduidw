@@ -57,11 +57,7 @@ repo_url = "https://github.com/hnmr293/posex.git"
 subprocess.run(["git", "clone", repo_url, folder_path7])  # Клонировать репозиторий
 
 
-current_dir = os.getcwd()  # Получить текущую директорию
-folder_path7 = os.path.join(current_dir, "extensions", "sd-webui-text2video")  # Создать путь к новой папке
-os.makedirs(folder_path7, exist_ok=True)  # Создать папку
-repo_url = "https://github.com/kabachuha/sd-webui-text2video.git"
-subprocess.run(["git", "clone", repo_url, folder_path7])  # Клонировать репозиторий
+
 
 
 
