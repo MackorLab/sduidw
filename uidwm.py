@@ -14,12 +14,6 @@ subprocess.run(["git", "clone", repo_url, folder_path2])  # Клонироват
 
 
 current_dir = os.getcwd()  # Получить текущую директорию
-folder_path4 = os.path.join(current_dir, "extensions", "SadTalker")
-os.makedirs(folder_path4, exist_ok=True)  # Создать папку
-
-# Клонировать репозиторий
-repo_url = "https://github.com/camenduru/SadTalker.git"
-subprocess.run(["git", "clone", "-b", "dev", repo_url, folder_path4]) 
 
 # Клонирование дополнительного репозитория
 checkpoints_folder = os.path.join(folder_path4, "checkpoints")
