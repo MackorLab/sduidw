@@ -44,11 +44,7 @@ os.makedirs(folder_path5, exist_ok=True)  # Создать папку
 repo_url = "https://github.com/thomasasfk/sd-webui-aspect-ratio-helper.git"
 subprocess.run(["git", "clone", repo_url, folder_path5])  # Клонировать репозиторий
 
-current_dir = os.getcwd()  # Получить текущую директорию
-folder_path6 = os.path.join(current_dir, "extensions", "asymmetric-tiling-sd-webui")  # Создать путь к новой папке
-os.makedirs(folder_path6, exist_ok=True)  # Создать папку
-repo_url = "https://github.com/tjm35/asymmetric-tiling-sd-webui.git"
-subprocess.run(["git", "clone", repo_url, folder_path6])  # Клонировать репозиторий
+
 
 current_dir = os.getcwd()  # Получить текущую директорию
 folder_path7 = os.path.join(current_dir, "extensions", "posex")  # Создать путь к новой папке
