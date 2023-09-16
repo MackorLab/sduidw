@@ -57,4 +57,8 @@ os.makedirs(checkpoints_path, exist_ok=True)  # Создать папку "check
 repo_url3 = "https://huggingface.co/datasets/DmatryMakeev/SadTalker"
 subprocess.run(["git", "clone", repo_url3, checkpoints_path])  # Клонировать репозиторий
 
-
+current_dir = os.getcwd()  # Получить текущую директорию
+folder_path8 = os.path.join(current_dir, "extensions", "sd-webui-text2video")  # Создать путь к новой папке
+os.makedirs(folder_path8, exist_ok=True)  # Создать папку
+repo_url = "https://github.com/kabachuha/sd-webui-text2video.git"
+subprocess.run(["git", "clone", repo_url, folder_path8])  # Клонировать репозиторий
