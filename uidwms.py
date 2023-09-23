@@ -99,10 +99,10 @@ subprocess.run(["git", "clone", repo_url, folder_path14])  # Клонирова�
 
 
 current_dir = os.getcwd()  # Получить текущую директорию
-folder_path14 = os.path.join(current_dir, "extensions", "stable-diffusion-webui-dataset-tag-editor")  # Создать путь к новой папке
-os.makedirs(folder_path14, exist_ok=True)  # Создать папку
+folder_path15 = os.path.join(current_dir, "extensions", "stable-diffusion-webui-dataset-tag-editor")  # Создать путь к новой папке
+os.makedirs(folder_path15, exist_ok=True)  # Создать папку
 repo_url = "https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor.git"
-subprocess.run(["git", "clone", repo_url, folder_path14])  # Клонировать репозиторий
+subprocess.run(["git", "clone", repo_url, folder_path15])  # Клонировать репозиторий
 
 
 
