@@ -78,7 +78,7 @@ subprocess.run(["git", "clone", repo_url, folder_path11])  # Клонирова�
 
 
 current_dir = os.getcwd()  # Получить текущую директорию
-folder_path12 = os.path.join(current_dir, "GFPGAN", "depthmap2mask")  # Создать путь к новой папке
+folder_path12 = os.path.join(current_dir, "extensions", "GFPGAN")  # Создать путь к новой папке
 os.makedirs(folder_path12, exist_ok=True)  # Создать папку
 repo_url = "https://github.com/TencentARC/GFPGAN.git"
 subprocess.run(["git", "clone", repo_url, folder_path12])  # Клонировать репозиторий
