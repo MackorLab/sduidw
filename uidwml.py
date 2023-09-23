@@ -1,5 +1,52 @@
 import os
 import subprocess
+
+
+
+# Указываем путь к целевой папке 24
+folder_path = "/content/ui/extensions"
+# Создаем папку с именем репозитория
+repo_folder_name = "sd-webui-controlnet"
+subprocess.run(["mkdir", f"{folder_path}/{repo_folder_name}"])
+# Клонируем репозиторий в созданную папку
+repo_url = "https://dagshub.com/DIAMONIK/controlnet.git"
+subprocess.run(["git", "clone", repo_url, f"{folder_path}/{repo_folder_name}"])
+
+
+
+ Указываем путь к целевой папке 5
+folder_path = "/content/ui/extensions"
+# Создаем папку с именем репозитория
+repo_folder_name = "sd-webui-additional-networks"
+subprocess.run(["mkdir", f"{folder_path}/{repo_folder_name}"])
+# Клонируем репозиторий в созданную папку
+repo_url = "https://dagshub.com/DIAMONIK/networks.git"
+subprocess.run(["git", "clone", repo_url, f"{folder_path}/{repo_folder_name}"])
+
+
+
+
+
+
+
+# Указываем путь к целевой папке 6
+folder_path = "/content/ui/extensions"
+# Создаем папку с именем репозитория
+repo_folder_name = "sd-civitai-browser"
+subprocess.run(["mkdir", f"{folder_path}/{repo_folder_name}"])
+# Клонируем репозиторий в созданную папку
+repo_url = "https://dagshub.com/DIAMONIK/sd-civitai-browser.git"
+subprocess.run(["git", "clone", repo_url, f"{folder_path}/{repo_folder_name}"])
+
+
+
+
+
+
+
+
+
+
 current_dir = os.getcwd()  # Получить текущую директорию
 folder_path1 = os.path.join(current_dir, "extensions", "batchlinks-webui")  # Создать путь к новой папке
 os.makedirs(folder_path1, exist_ok=True)  # Создать папку
