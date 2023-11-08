@@ -77,11 +77,11 @@ repo_url = "https://github.com/Extraltodeus/depthmap2mask.git"
 subprocess.run(["git", "clone", repo_url, folder_path11])  # Клонировать репозиторий
 
 
-#current_dir = os.getcwd()  # Получить текущую директорию
-#folder_path12 = os.path.join(current_dir, "extensions", "GFPGAN")  # Создать путь к новой папке
-#os.makedirs(folder_path12, exist_ok=True)  # Создать папку
-#repo_url = "https://github.com/TencentARC/GFPGAN.git"
-#subprocess.run(["git", "clone", repo_url, folder_path12])  # Клонировать репозиторий
+current_dir = os.getcwd()  # Получить текущую директорию
+folder_path12 = os.path.join(current_dir, "extensions", "sd-webui-roop")  # Создать путь к новой папке
+os.makedirs(folder_path12, exist_ok=True)  # Создать папку
+repo_url = "https://github.com/s0md3v/sd-webui-roop.git"
+subprocess.run(["git", "clone", repo_url, folder_path12])  # Клонировать репозиторий
 
 
 current_dir = os.getcwd()  # Получить текущую директорию
