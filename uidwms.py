@@ -62,11 +62,11 @@ subprocess.run(["git", "clone", repo_url, folder_path9])  # Клонироват
 
 
 
-#current_dir = os.getcwd()  # Получить текущую директорию
-#folder_path10 = os.path.join(current_dir, "extensions", "sd-webui-faceswaplab")  # Создать путь к новой папке
-#os.makedirs(folder_path10, exist_ok=True)  # Создать папку
-#repo_url = "https://github.com/glucauze/sd-webui-faceswaplab.git"
-#subprocess.run(["git", "clone", repo_url, folder_path10])  # Клонировать репозиторий
+current_dir = os.getcwd()  # Получить текущую директорию
+folder_path10 = os.path.join(current_dir, "extensions", "sd-webui-faceswaplab")  # Создать путь к новой папке
+os.makedirs(folder_path10, exist_ok=True)  # Создать папку
+repo_url = "https://github.com/glucauze/sd-webui-faceswaplab.git"
+subprocess.run(["git", "clone", repo_url, folder_path10])  # Клонировать репозиторий
 
 
 
@@ -77,11 +77,11 @@ repo_url = "https://github.com/Extraltodeus/depthmap2mask.git"
 subprocess.run(["git", "clone", repo_url, folder_path11])  # Клонировать репозиторий
 
 
-current_dir = os.getcwd()  # Получить текущую директорию
-folder_path12 = os.path.join(current_dir, "extensions", "GFPGAN")  # Создать путь к новой папке
-os.makedirs(folder_path12, exist_ok=True)  # Создать папку
-repo_url = "https://github.com/TencentARC/GFPGAN.git"
-subprocess.run(["git", "clone", repo_url, folder_path12])  # Клонировать репозиторий
+#current_dir = os.getcwd()  # Получить текущую директорию
+#folder_path12 = os.path.join(current_dir, "extensions", "GFPGAN")  # Создать путь к новой папке
+#os.makedirs(folder_path12, exist_ok=True)  # Создать папку
+#repo_url = "https://github.com/TencentARC/GFPGAN.git"
+#subprocess.run(["git", "clone", repo_url, folder_path12])  # Клонировать репозиторий
 
 
 current_dir = os.getcwd()  # Получить текущую директорию
