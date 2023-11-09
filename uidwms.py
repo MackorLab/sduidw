@@ -4,14 +4,14 @@ import subprocess
 current_dir = os.getcwd()  # Получить текущую директорию
 folder_path1 = os.path.join(current_dir, "extensions", "sd-webui-animatediff")  # Создать путь к новой папке
 os.makedirs(folder_path1, exist_ok=True)  # Создать папку
-repo_url = "https://github.com/continue-revolution/sd-webui-animatediff.git"
-subprocess.run(["git", "clone", repo_url, folder_path1])  # Клонировать репозиторий
+repo_url1 = "https://github.com/continue-revolution/sd-webui-animatediff.git"
+subprocess.run(["git", "clone", repo_url1, folder_path1])  # Клонировать репозиторий
 
 current_dir = os.getcwd()  # Получить текущую директорию
 folder_path2 = os.path.join(current_dir, "extensions", "openpose-editor")  # Создать путь к новой папке
 os.makedirs(folder_path2, exist_ok=True)  # Создать папку
-repo_url = "https://github.com/fkunn1326/openpose-editor.git"
-subprocess.run(["git", "clone", repo_url, folder_path2])  # Клонировать репозиторий
+repo_url2 = "https://github.com/fkunn1326/openpose-editor.git"
+subprocess.run(["git", "clone", repo_url2, folder_path2])  # Клонировать репозиторий
 
 
 
