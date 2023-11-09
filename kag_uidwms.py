@@ -104,4 +104,6 @@ os.makedirs(folder_path15, exist_ok=True)  # Создать папку
 repo_url = "https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor.git"
 subprocess.run(["git", "clone", repo_url, folder_path15])  # Клонировать репозиторий
 
-
+current_dir16 = os.getcwd()  # Получить текущую директорию
+folder_path16 = os.path.join(current_dir16, "models", "Lora", "AnimateDiff")  # Создать путь к новой папке
+os.makedirs(folder_path16, exist_ok=True)  # Создать папку
