@@ -78,9 +78,9 @@ subprocess.run(["git", "clone", repo_url, folder_path11])  # Клонирова�
 
 
 #current_dir = os.getcwd()  # Получить текущую директорию
-#folder_path12 = os.path.join(current_dir, "extensions", "stable-diffusion-webui-prompt-trave")  # Создать путь к новой папке
+#folder_path12 = os.path.join(current_dir, "extensions", "stable-diffusion-webui-prompt-travel")  # Создать путь к новой папке
 #os.makedirs(folder_path12, exist_ok=True)  # Создать папку
-#repo_url = "https://github.com/s9roll7/animatediff-cli-prompt-travel.git"
+#repo_url = "https://github.com/Kahsolt/stable-diffusion-webui-prompt-travel.git"
 #subprocess.run(["git", "clone", repo_url, folder_path12])  # Клонировать репозиторий
 
 
