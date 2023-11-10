@@ -106,9 +106,9 @@ subprocess.run(["git", "clone", repo_url, folder_path15])  # Клонирова�
 
 
 current_dir = os.getcwd()  # Получить текущую директорию
-folder_path17 = os.path.join(current_dir, "extensions", "sd-dynamic-prompts")  # Создать путь к новой папке
+folder_path17 = os.path.join(current_dir, "extensions", "sd-webui-openpose-editor")  # Создать путь к новой папке
 os.makedirs(folder_path17, exist_ok=True)  # Создать папку
-repo_url = "https://github.com/adieyal/sd-dynamic-prompts.git"
+repo_url = "https://github.com/huchenlei/sd-webui-openpose-editor.git"
 subprocess.run(["git", "clone", repo_url, folder_path17])  # Клонировать репозиторий
 
 
