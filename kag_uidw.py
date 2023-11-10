@@ -21,7 +21,7 @@ commands = [
     "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/models/realcartoon3d_v10.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o realcartoon3d_v10.safetensors",
 
      #Lora
-    "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/loras/MandaraArt_v1.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/networks/models/lora -o MandaraArt_v1.safetensors",
+    "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/loras/MandaraArt_v1.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-additional-networks/models/lora -o MandaraArt_v1.safetensors",
 
 
 
