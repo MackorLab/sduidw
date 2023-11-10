@@ -57,7 +57,7 @@ subprocess.run(["git", "clone", repo_url, folder_path8])  # Клонироват
 current_dir = os.getcwd()  # Получить текущую директорию
 folder_path9 = os.path.join(current_dir, "extensions", "sd-webui-additional-networks")  # Создать путь к новой папке
 os.makedirs(folder_path9, exist_ok=True)  # Создать папку
-repo_url = "https://dagshub.com/DIAMONIK/networks.git"
+repo_url = "https://dagshub.com/DIAMONIK/sd-webui-additional-networks.git"
 subprocess.run(["git", "clone", repo_url, folder_path9])  # Клонировать репозиторий
 
 
