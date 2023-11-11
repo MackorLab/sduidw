@@ -122,6 +122,6 @@ os.makedirs(folder_path16, exist_ok=True)  # Создать папку
 current_dir = os.getcwd()  # Получить текущую директорию
 folder_path17 = os.path.join(current_dir, "extensions", "sd-webui-openpose-editor")  # Создать путь к новой папке
 os.makedirs(folder_path17, exist_ok=True)  # Создать папку
-repo_url = "https://github.com/MackorLab/sd-webui-openpose-editor.git"
+repo_url = "https://github.com/huchenlei/sd-webui-openpose-editor/tree/v0.2.1"
 subprocess.run(["git", "clone", repo_url, folder_path17])  # Клонировать репозиторий
 
