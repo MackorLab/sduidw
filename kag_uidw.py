@@ -30,6 +30,15 @@ commands = [
      #models
     "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/dreamlike-art/dreamlike-diffusion-1.0/resolve/main/dreamlike-diffusion-1.0.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o dreamlike-diffusion-1.0.safetensors",
 
+
+     #VAE
+
+   "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.ckpt -d /kaggle/working/stable-diffusion-webui/models/VAE -o vae-ft-ema-560000-ema-pruned.ckpt",
+   "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt -d /kaggle/working/stable-diffusion-webui/models/VAE -o vae-ft-mse-840000-ema-pruned.ckpt",
+
+
+
+     
      #Lora
     "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/loras/MandaraArt_v1.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-additional-networks/models/lora -o MandaraArt_v1.safetensors",
     "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://civitai.com/api/download/models/39885 -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-additional-networks/models/lora -o Better_light.safetensors",
