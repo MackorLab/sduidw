@@ -62,7 +62,7 @@ commands = [
     # "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/models/realcartoonRealistic_v9.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o realcartoonRealistic_v9.safetensors", 
      #VAE
 
-   #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.ckpt -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o vae-ft-ema-560000-ema-pruned.ckpt",
+   "!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors -d /kaggle/working/stable-diffusion-webui/models/VAE -o vae-ft-mse-840000-ema-pruned.safetensors",
    #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o vae-ft-mse-840000-ema-pruned.ckpt",
 
 
