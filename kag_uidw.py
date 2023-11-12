@@ -69,8 +69,8 @@ commands = [
 
      
      #Lora
-    #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/loras/MandaraArt_v1.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-additional-networks/models/lora -o MandaraArt_v1.safetensors",
-    #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://civitai.com/api/download/models/39885 -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-additional-networks/models/lora -o Better_light.safetensors",
+    "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/loras/MandaraArt_v1.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-additional-networks/models/lora -o MandaraArt_v1.safetensors",
+    "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://civitai.com/api/download/models/39885 -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-additional-networks/models/lora -o Better_light.safetensors",
 
 
     
