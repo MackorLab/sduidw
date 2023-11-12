@@ -2,6 +2,11 @@ import os
 import subprocess
 
 
+current_dir = os.getcwd()  # Получить текущую директорию
+folder_path1 = os.path.join(current_dir, "extensions", "batchlinks-webui")  # Создать путь к новой папке
+os.makedirs(folder_path1, exist_ok=True)  # Создать папку
+repo_url = "https://github.com/etherealxx/batchlinks-webui.git"
+subprocess.run(["git", "clone", repo_url, folder_path1])  # Клонировать репозиторий
 
 
 
@@ -53,11 +58,6 @@ subprocess.run(["git", "clone", repo_url, folder_path10])  # Клонирова�
 
 
 
-current_dir = os.getcwd()  # Получить текущую директорию
-folder_path11 = os.path.join(current_dir, "extensions", "depthmap2mask")  # Создать путь к новой папке
-os.makedirs(folder_path11, exist_ok=True)  # Создать папку
-repo_url = "https://github.com/Extraltodeus/depthmap2mask.git"
-subprocess.run(["git", "clone", repo_url, folder_path11])  # Клонировать репозиторий
 
 
 #current_dir = os.getcwd()  # Получить текущую директорию
