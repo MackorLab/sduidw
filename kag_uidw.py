@@ -57,9 +57,9 @@ commands = [
      
      #models
     "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/models/realcartoon3d_v10.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o realcartoon3d_v10.safetensors",
-    "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/models/realcartoonAnime_v6.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o realcartoonAnime_v6.safetensors",
-    "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/models/realcartoonPixar_v4.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o realcartoonPixar_v4.safetensors",
-    "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/models/realcartoonRealistic_v9.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o realcartoonRealistic_v9.safetensors", 
+    #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/models/realcartoonAnime_v6.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o realcartoonAnime_v6.safetensors",
+    #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/models/realcartoonPixar_v4.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o realcartoonPixar_v4.safetensors",
+    #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/models/realcartoonRealistic_v9.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o realcartoonRealistic_v9.safetensors", 
      #VAE
 
    "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors -d /kaggle/working/stable-diffusion-webui/models/VAE -o vae-ft-mse-840000-ema-pruned.safetensors",
