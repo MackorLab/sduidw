@@ -85,7 +85,7 @@ subprocess.run(["git", "clone", repo_url, folder_path17])  # Клонирова�
 
 
 current_dir16 = os.getcwd()  # Получить текущую директорию
-folder_path16 = os.path.join(current_dir16, "extensions", "videos")  # Создать путь к новой папке
+folder_path16 = os.path.join(current_dir16, "extensions", "sd-webui-prompt-all-in-one")  # Создать путь к новой папке
 os.makedirs(folder_path16, exist_ok=True)  # Создать папку
 repo_url16 = "https://github.com/Physton/sd-webui-prompt-all-in-one.git"
 subprocess.run(["git", "clone", repo_url16, folder_path16])  # Клонировать репозиторий
