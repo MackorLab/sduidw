@@ -18,9 +18,9 @@ subprocess.run(["git", "clone", repo_url, folder_path3])  # Клонироват
 
 
 current_dir = os.getcwd()  # Получить текущую директорию
-folder_path4 = os.path.join(current_dir, "extensions", "stable-diffusion-webui-two-shot")  # Создать путь к новой папке
+folder_path4 = os.path.join(current_dir, "extensions", "multidiffusion-upscaler-for-automatic1111")  # Создать путь к новой папке
 os.makedirs(folder_path4, exist_ok=True)  # Создать папку
-repo_url = "https://github.com/ashen-sensored/stable-diffusion-webui-two-shot.git"
+repo_url = "https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111.git"
 subprocess.run(["git", "clone", repo_url, folder_path4])  # Клонировать репозиторий
 
 
@@ -32,11 +32,7 @@ subprocess.run(["git", "clone", repo_url, folder_path5])  # Клонироват
 
 
 
-current_dir = os.getcwd()  # Получить текущую директорию
-folder_path7 = os.path.join(current_dir, "extensions", "posex")  # Создать путь к новой папке
-os.makedirs(folder_path7, exist_ok=True)  # Создать папку
-repo_url = "https://github.com/hnmr293/posex.git"
-subprocess.run(["git", "clone", repo_url, folder_path7])  # Клонировать репозиторий
+
 
 
 
@@ -83,13 +79,6 @@ subprocess.run(["git", "clone", repo_url, folder_path17])  # Клонирова�
 
 
 
-
-current_dir16 = os.getcwd()  # Получить текущую директорию
-folder_path16 = os.path.join(current_dir16, "extensions", "sd-webui-prompt-all-in-one")  # Создать путь к новой папке
-os.makedirs(folder_path16, exist_ok=True)  # Создать папку
-repo_url16 = "https://github.com/Physton/sd-webui-prompt-all-in-one.git"
-subprocess.run(["git", "clone", repo_url16, folder_path16])  # Клонировать репозиторий
-
 current_dir18 = os.getcwd()  # Получить текущую директорию
 folder_path18 = os.path.join(current_dir18, "extensions", "images")  # Создать путь к новой папке
 os.makedirs(folder_path16, exist_ok=True)  # Создать папку
@@ -101,4 +90,4 @@ current_dir19 = os.getcwd()  # Получить текущую директор�
 folder_path19 = os.path.join(current_dir19, "extensions", "videos")  # Создать путь к новой папке
 os.makedirs(folder_path19, exist_ok=True)  # Создать папку
 
-subprocess.run(["git", "clone", url_vid, folder_path18]) 
+subprocess.run(["git", "clone", url_vid, folder_path19]) 
