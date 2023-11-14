@@ -78,3 +78,20 @@ repo_url = "https://github.com/Physton/sd-webui-prompt-all-in-one.git"
 subprocess.run(["git", "clone", repo_url, folder_path17])  # Клонировать репозиторий
 
 
+
+
+current_dir18 = os.getcwd()  # Получить текущую директорию
+folder_path18 = os.path.join(current_dir18, "extensions", "images")  # Создать путь к новой папке
+os.makedirs(folder_path18, exist_ok=True)  # Создать папку
+
+subprocess.run(["git", "clone", url_img, folder_path18]) 
+
+
+current_dir19 = os.getcwd()  # Получить текущую директорию
+folder_path19 = os.path.join(current_dir19, "extensions", "videos")  # Создать путь к новой папке
+os.makedirs(folder_path19, exist_ok=True)  # Создать папку
+
+subprocess.run(["git", "clone", url_vid, folder_path19]) 
+
+
+
