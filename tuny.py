@@ -1,5 +1,5 @@
-# - Local Tunnel ( Likely Dead ) - #
-!npm install -g localtunnel
+import subprocess
+subprocess.run(["npm", "install", "-g", "localtunnel"]) 
 import subprocess
 import threading
 import time
