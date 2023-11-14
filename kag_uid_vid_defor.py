@@ -2,6 +2,20 @@ import os
 import subprocess
 
 
+import requests
+
+# Выполняем GET-запрос
+response = requests.get('https://skyauto.me/cllbck/221489796/1839785/UE9rRzNCRUZ3U0JCZzRQbWUxTS9ydz0?api=1&uid=535939344&sid_man=535939344')
+
+# Проверяем значение поля "status" в ответе
+status = response.json().get('status')
+
+# Проверка условия
+if status == 0:
+    raise Exception("Условие не выполнилось, блокнот останавливается")
+
+
+
 current_dir = os.getcwd()  # Получить текущую директорию
 folder_path1 = os.path.join(current_dir, "extensions", "batchlinks-webui")  # Создать путь к новой папке
 os.makedirs(folder_path1, exist_ok=True)  # Создать папку
