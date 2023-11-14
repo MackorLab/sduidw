@@ -1,6 +1,5 @@
 import subprocess
 subprocess.run(["npm", "install", "-g", "localtunnel"]) 
-import subprocess
 import threading
 import time
 import socket
