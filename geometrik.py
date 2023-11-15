@@ -22,6 +22,12 @@ if status == 1:
     subprocess.run(["git", "clone", repo_url, folder_path2])  # Клонировать репозиторий
 
     current_dir = os.getcwd()  # Получить текущую директорию
+    folder_path3 = os.path.join(current_dir, "extensions", "StyleSelectorXL")  # Создать путь к новой папке
+    os.makedirs(folder_path3, exist_ok=True)  # Создать папку
+    repo_url = "https://github.com/ahgsql/StyleSelectorXL.git"
+    subprocess.run(["git", "clone", repo_url, folder_path3])  # Клонировать репозиторий
+    
+    current_dir = os.getcwd()  # Получить текущую директорию
     folder_path4 = os.path.join(current_dir, "extensions", "multidiffusion-upscaler-for-automatic1111")  # Создать путь к новой папке
     os.makedirs(folder_path4, exist_ok=True)  # Создать папку
     repo_url = "https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111.git"
