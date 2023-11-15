@@ -56,6 +56,20 @@ if status == 1:
     os.makedirs(folder_path17, exist_ok=True)  # Создать папку
     repo_url = "https://github.com/Physton/sd-webui-prompt-all-in-one.git"
     subprocess.run(["git", "clone", repo_url, folder_path17])  # Клонировать репозиторий
+
+    current_dir = os.getcwd()  # Получить текущую директорию
+    folder_path13 = os.path.join(current_dir, "extensions", "adetailer")  # Создать путь к новой папке
+    os.makedirs(folder_path13, exist_ok=True)  # Создать папку
+    repo_url = "https://github.com/Bing-su/adetailer.git"
+    subprocess.run(["git", "clone", repo_url, folder_path13])  # Клонировать репозиторий
+
+
+    current_dir = os.getcwd()  # Получить текущую директорию
+    folder_path14 = os.path.join(current_dir, "extensions", "sd-webui-reactor")  # Создать путь к новой папке
+    os.makedirs(folder_path14, exist_ok=True)  # Создать папку
+    repo_url = "https://github.com/Gourieff/sd-webui-reactor.git"
+    subprocess.run(["git", "clone", repo_url, folder_path14])  # Клонировать репозиторий
+
     # Команды установки моделей
     commands = [
 
