@@ -76,13 +76,7 @@ if status == 1:
     repo_url = "https://github.com/Gourieff/sd-webui-reactor.git"
     subprocess.run(["git", "clone", repo_url, folder_path14])  # Клонировать репозиторий
 
-    current_dir = os.getcwd()  # Получить текущую директорию
-    folder_path18 = os.path.join(current_dir, "extensions", "videos")  # Создать путь к новой папке
-    os.makedirs(folder_path18, exist_ok=True)  # Создать папку
 
-    current_dir = os.getcwd()  # Получить текущую директорию
-    folder_path19 = os.path.join(current_dir, "extensions", "images")  # Создать путь к новой папке
-    os.makedirs(folder_path19, exist_ok=True)  # Создать папку
 
     # Команды установки моделей
     commands = [
@@ -112,7 +106,7 @@ if status == 1:
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15s2_lineart_anime_fp16.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11p_sd15s2_lineart_anime_fp16.safetensors",     
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11u_sd15_tile_fp16.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11u_sd15_tile_fp16.safetensors",
         #models
-        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/XpucT/Deliberate/resolve/main/Deliberate_v3-inpainting.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o Deliberate_v3-inpainting.safetensors",
+        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/models/sd-v1-5-inpainting.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o sd-v1-5-inpainting.safetensors",
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/XpucT/Deliberate/resolve/main/Deliberate_v3.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o Deliberate_v3.safetensors",
         #VAE
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors -d /kaggle/working/stable-diffusion-webui/models/VAE -o vae-ft-mse-840000-ema-pruned.safetensors",
