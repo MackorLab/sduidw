@@ -27,11 +27,11 @@ if status == 1:
     #repo_url = "https://github.com/ahgsql/StyleSelectorXL.git"
     #subprocess.run(["git", "clone", repo_url, folder_path3])  # Клонировать репозиторий
     
-    current_dir = os.getcwd()  # Получить текущую директорию
-    folder_path4 = os.path.join(current_dir, "extensions", "multidiffusion-upscaler-for-automatic1111")  # Создать путь к новой папке
-    os.makedirs(folder_path4, exist_ok=True)  # Создать папку
-    repo_url = "https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111.git"
-    subprocess.run(["git", "clone", repo_url, folder_path4])  # Клонировать репозиторий
+    #current_dir = os.getcwd()  # Получить текущую директорию
+    #folder_path4 = os.path.join(current_dir, "extensions", "multidiffusion-upscaler-for-automatic1111")  # Создать путь к новой папке
+    #os.makedirs(folder_path4, exist_ok=True)  # Создать папку
+    #repo_url = "https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111.git"
+    #subprocess.run(["git", "clone", repo_url, folder_path4])  # Клонировать репозиторий
 
     current_dir = os.getcwd()  # Получить текущую директорию
     folder_path5 = os.path.join(current_dir, "extensions", "sd-webui-aspect-ratio-helper")  # Создать путь к новой папке
@@ -89,7 +89,7 @@ if status == 1:
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter-plus_sd15.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter-plus_sd15.pth",
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter_sd15.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter_sd15.pth",
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter_sd15_light.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter_sd15_light.pth", 
-        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter-full-face_sd15.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter-full-face_sd15.pth",        
+        #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter-full-face_sd15.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter-full-face_sd15.pth",        
     
         #ControlNet
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11e_sd15_ip2p_fp16.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11e_sd15_ip2p_fp16.safetensors",
