@@ -16,10 +16,10 @@ if status == 1:
     subprocess.run(["git", "clone", repo_url, folder_path1])  # Клонировать репозиторий
     
     current_dir = os.getcwd()  # Получить текущую директорию
-    folder_path3 = os.path.join(current_dir, "extensions", "stable-diffusion-webui-rembg")  # Создать путь к новой папке
-    os.makedirs(folder_path3, exist_ok=True)  # Создать папку
+    folder_path2 = os.path.join(current_dir, "extensions", "stable-diffusion-webui-rembg")  # Создать путь к новой папке
+    os.makedirs(folder_path2, exist_ok=True)  # Создать папку
     repo_url = "https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg.git"
-    subprocess.run(["git", "clone", repo_url, folder_path3])  # Клонировать репозиторий
+    subprocess.run(["git", "clone", repo_url, folder_path2])  # Клонировать репозиторий
 
     current_dir = os.getcwd()  # Получить текущую директорию
     folder_path4 = os.path.join(current_dir, "extensions", "multidiffusion-upscaler-for-automatic1111")  # Создать путь к новой папке
@@ -69,6 +69,14 @@ if status == 1:
     os.makedirs(folder_path14, exist_ok=True)  # Создать папку
     repo_url = "https://github.com/Gourieff/sd-webui-reactor.git"
     subprocess.run(["git", "clone", repo_url, folder_path14])  # Клонировать репозиторий
+
+    current_dir = os.getcwd()  # Получить текущую директорию
+    folder_path18 = os.path.join(current_dir, "extensions", "videos")  # Создать путь к новой папке
+    os.makedirs(folder_path18, exist_ok=True)  # Создать папку
+
+    current_dir = os.getcwd()  # Получить текущую директорию
+    folder_path19 = os.path.join(current_dir, "extensions", "images")  # Создать путь к новой папке
+    os.makedirs(folder_path19, exist_ok=True)  # Создать папку
 
     # Команды установки моделей
     commands = [
