@@ -77,6 +77,19 @@ if status == 1:
     subprocess.run(["git", "clone", repo_url, folder_path14])  # Клонировать репозиторий
 
 
+    current_dir = os.getcwd()  # Получить текущую директорию
+    folder_path18 = os.path.join(current_dir, "extensions", "sd-webui-model-converter")  # Создать путь к новой папке
+    os.makedirs(folder_path18, exist_ok=True)  # Создать папку
+    repo_url = "https://github.com/Akegarasu/sd-webui-model-converter.git"
+    subprocess.run(["git", "clone", repo_url, folder_path18])  # Клонировать репозиторий
+
+
+    current_dir = os.getcwd()  # Получить текущую директорию
+    folder_path19 = os.path.join(current_dir, "extensions", "sd-webui-train-tools")  # Создать путь к новой папке
+    os.makedirs(folder_path19, exist_ok=True)  # Создать папку
+    repo_url = "https://github.com/liasece/sd-webui-train-tools.git"
+    subprocess.run(["git", "clone", repo_url, folder_path19])  # Клонировать репозиторий
+
 
     # Команды установки моделей
     commands = [
