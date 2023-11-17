@@ -77,18 +77,18 @@ if status == 1:
     subprocess.run(["git", "clone", repo_url, folder_path14])  # Клонировать репозиторий
 
 
-    current_dir = os.getcwd()  # Получить текущую директорию
-    folder_path18 = os.path.join(current_dir, "extensions", "sd-webui-model-converter")  # Создать путь к новой папке
-    os.makedirs(folder_path18, exist_ok=True)  # Создать папку
-    repo_url = "https://github.com/Akegarasu/sd-webui-model-converter.git"
-    subprocess.run(["git", "clone", repo_url, folder_path18])  # Клонировать репозиторий
+    #current_dir = os.getcwd()  # Получить текущую директорию
+    #folder_path18 = os.path.join(current_dir, "extensions", "sd-webui-model-converter")  # Создать путь к новой папке
+    #os.makedirs(folder_path18, exist_ok=True)  # Создать папку
+    #repo_url = "https://github.com/Akegarasu/sd-webui-model-converter.git"
+    #subprocess.run(["git", "clone", repo_url, folder_path18])  # Клонировать репозиторий
 
 
-    current_dir = os.getcwd()  # Получить текущую директорию
-    folder_path19 = os.path.join(current_dir, "extensions", "sd-webui-train-tools")  # Создать путь к новой папке
-    os.makedirs(folder_path19, exist_ok=True)  # Создать папку
-    repo_url = "https://github.com/liasece/sd-webui-train-tools.git"
-    subprocess.run(["git", "clone", repo_url, folder_path19])  # Клонировать репозиторий
+    #current_dir = os.getcwd()  # Получить текущую директорию
+    #folder_path19 = os.path.join(current_dir, "extensions", "sd-webui-train-tools")  # Создать путь к новой папке
+    #os.makedirs(folder_path19, exist_ok=True)  # Создать папку
+    #repo_url = "https://github.com/liasece/sd-webui-train-tools.git"
+    #subprocess.run(["git", "clone", repo_url, folder_path19])  # Клонировать репозиторий
 
 
     # Команды установки моделей
@@ -101,7 +101,7 @@ if status == 1:
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter-plus-face_sd15.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter-plus-face_sd15.pth",
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter-plus_sd15.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter-plus_sd15.pth",
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter_sd15.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter_sd15.pth",
-        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter_sd15_light.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter_sd15_light.pth", 
+        #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter_sd15_light.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter_sd15_light.pth", 
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter-full-face_sd15.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter-full-face_sd15.pth",        
     
         #ControlNet
@@ -119,7 +119,7 @@ if status == 1:
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge_fp16.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11p_sd15_softedge_fp16.safetensors",
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11p_sd15s2_lineart_anime_fp16.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11p_sd15s2_lineart_anime_fp16.safetensors",     
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11u_sd15_tile_fp16.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11u_sd15_tile_fp16.safetensors",
-        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/controlnet11Models_tileE.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o controlnet11Models_tileE.safetensors",
+        #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/controlnet11Models_tileE.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o controlnet11Models_tileE.safetensors",
         #models
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/models/sd-v1-5-inpainting.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o sd-v1-5-inpainting.safetensors",
         
