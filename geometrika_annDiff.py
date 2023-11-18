@@ -23,11 +23,11 @@ if status == 1:
 
 
     
-    #current_dir = os.getcwd()  # Получить текущую директорию
-    #folder_path4 = os.path.join(current_dir, "extensions", "multidiffusion-upscaler-for-automatic1111")  # Создать путь к новой папке
-    #os.makedirs(folder_path4, exist_ok=True)  # Создать папку
-    #repo_url = "https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111.git"
-    #subprocess.run(["git", "clone", repo_url, folder_path4])  # Клонировать репозиторий
+    current_dir = os.getcwd()  # Получить текущую директорию
+    folder_path4 = os.path.join(current_dir, "extensions", "stable-diffusion-webui-prompt-travel")  # Создать путь к новой папке
+    os.makedirs(folder_path4, exist_ok=True)  # Создать папку
+    repo_url = "https://github.com/Kahsolt/stable-diffusion-webui-prompt-travel.git"
+    subprocess.run(["git", "clone", repo_url, folder_path4])  # Клонировать репозиторий
 
     current_dir = os.getcwd()  # Получить текущую директорию
     folder_path5 = os.path.join(current_dir, "extensions", "sd-webui-aspect-ratio-helper")  # Создать путь к новой папке
