@@ -106,7 +106,7 @@ if status == 1:
         #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/control_v11u_sd15_tile_fp16.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11u_sd15_tile_fp16.safetensors",
         #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/controlnet11Models_tileE.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o controlnet11Models_tileE.safetensors",
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/lllyasviel/ControlNet-v1-1/blob/main/control_v11f1e_sd15_tile.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11f1e_sd15_tile.pth",
-        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M hhttps://huggingface.co/lllyasviel/ControlNet-v1-1/blob/main/control_v11f1e_sd15_tile.yaml -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11f1e_sd15_tile.yaml",
+
         #models
         #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/models/sd-v1-5-inpainting.safetensors -d /kaggle/working/stable-diffusion-webui/models/Stable-diffusion -o sd-v1-5-inpainting.safetensors",
         
