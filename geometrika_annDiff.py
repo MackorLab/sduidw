@@ -42,9 +42,9 @@ if status == 1:
     subprocess.run(["git", "clone", repo_url, folder_path8])  # Клонировать репозиторий
 
     current_dir = os.getcwd()  # Получить текущую директорию
-    folder_path10 = os.path.join(current_dir, "extensions", "deforum-for-automatic1111-webui")  # Создать путь к новой папке
+    folder_path10 = os.path.join(current_dir, "extensions", "sd-webui-animatediff")  # Создать путь к новой папке
     os.makedirs(folder_path10, exist_ok=True)  # Создать папку
-    repo_url = "https://github.com/deforum-art/deforum-for-automatic1111-webui.git"
+    repo_url = "https://github.com/continue-revolution/sd-webui-animatediff.git"
     subprocess.run(["git", "clone", repo_url, folder_path10])  # Клонировать репозиторий
 
 
@@ -56,14 +56,32 @@ if status == 1:
     subprocess.run(["git", "clone", repo_url, folder_path17])  # Клонировать репозиторий
 
 
-
+    current_dir16 = os.getcwd()  # Получить текущую директорию
+    folder_path16 = os.path.join(current_dir16, "models", "Lora", "AnimateDiff")  # Создать путь к новой папке
+    os.makedirs(folder_path16, exist_ok=True)  # Создать папку
 
     # Команды установки моделей
     commands = [
 
-        #ControlNet - Deforum
-        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/TemporalNet%20/diff_control_sd15_temporalnet_fp16.safetensors -d /kaggle/working/stable-diffusion-webui/models/ControlNet -o diff_control_sd15_temporalnet_fp16.safetensors",
-        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/TemporalNet%20/diffusion_pytorch_model.fp16.yaml -d /kaggle/working/stable-diffusion-webui/models/ControlNet -o diffusion_pytorch_model.fp16.yaml",
+          #animateDiff-model
+        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-animatediff/model -o mm_sd_v15_v2.ckpt",
+
+
+
+         #modules - models
+    
+        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_PanLeft.ckpt -d /kaggle/working/stable-diffusion-webui/models/Lora/AnimateDiff -o v2_lora_PanLeft.ckpt",
+
+        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_PanRight.ckpt -d /kaggle/working/stable-diffusion-webui/models/Lora/AnimateDiff -o v2_lora_PanRight.ckpt",
+
+        #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_RollingAnticlockwise.ckpt -d /kaggle/working/stable-diffusion-webui/models/Lora/AnimateDiff -o v2_lora_RollingAnticlockwise.ckpt",
+        #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_RollingClockwise.ckpt -d /kaggle/working/stable-diffusion-webui/models/Lora/AnimateDiff -o v2_lora_RollingClockwise.ckpt",
+        #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltDown.ckpt -d /kaggle/working/stable-diffusion-webui/models/Lora/AnimateDiff -o v2_lora_TiltDown.ckpt",
+        #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltUp.ckpt -d /kaggle/working/stable-diffusion-webui/models/Lora/AnimateDiff -o v2_lora_TiltUp.ckpt",
+        #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomIn.ckpt -d /kaggle/working/stable-diffusion-webui/models/Lora/AnimateDiff -o v2_lora_ZoomIn.ckpt",
+        #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomOut.ckpt -d /kaggle/working/stable-diffusion-webui/models/Lora/AnimateDiff -o v2_lora_ZoomOut.ckpt",
+
+        
         #adapter-models
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter-plus-face_sd15.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter-plus-face_sd15.pth",
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/DiamonSD-Adapter/resolve/main/ip-adapter-plus_sd15.pth -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o ip-adapter-plus_sd15.pth",
