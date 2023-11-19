@@ -56,7 +56,7 @@ if status == 1:
     current_dir = os.getcwd()  # Получить текущую директорию
     folder_path17 = os.path.join(current_dir, "extensions", "sd-webui-prompt-all-in-one")  # Создать путь к новой папке
     os.makedirs(folder_path17, exist_ok=True)  # Создать папку
-    repo_url = "https://github.com/Physton/sd-webui-prompt-all-in-one.git"
+    repo_url = "https://github.com/MackorLab/sd-webui-prompt-all-in-one.git"
     subprocess.run(["git", "clone", repo_url, folder_path17])  # Клонировать репозиторий
 
     current_dir = os.getcwd()  # Получить текущую директорию
