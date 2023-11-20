@@ -124,10 +124,10 @@ if status == 1:
 
         #Script
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/script/0hx51x.py -d /kaggle/working/stable-diffusion-webui/scripts -o 0hx51x.py",
-
-
-
-        
+        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/script/ContorlNet_I2I_sequence_toyxyz_V2.py -d /kaggle/working/stable-diffusion-webui/scripts -o ContorlNet_I2I_sequence_toyxyz_V2.py",
+        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/script/multi_frame_render.py -d /kaggle/working/stable-diffusion-webui/scripts -o multi_frame_render.py",
+        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/script/loopback_wave.py -d /kaggle/working/stable-diffusion-webui/scripts -o loopback_wave.py",
+        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/DmitrMakeev/Models-coll/resolve/main/script/run_n_times.py -d /kaggle/working/stable-diffusion-webui/scripts -o run_n_times.py",
     ]
     # Выполнение команд
     for command in commands:
