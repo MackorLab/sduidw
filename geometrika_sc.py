@@ -81,9 +81,9 @@ if status == 1:
 
 
     #current_dir = os.getcwd()  # Получить текущую директорию
-    #folder_path19 = os.path.join(current_dir, "extensions", "sd-webui-train-tools")  # Создать путь к новой папке
+    #folder_path19 = os.path.join(current_dir, "extensions", "next-view")  # Создать путь к новой папке
     #os.makedirs(folder_path19, exist_ok=True)  # Создать папку
-    #repo_url = "https://github.com/liasece/sd-webui-train-tools.git"
+    #repo_url = "https://github.com/NextDiffusion/next-view"
     #subprocess.run(["git", "clone", repo_url, folder_path19])  # Клонировать репозиторий
 
     
