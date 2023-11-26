@@ -63,7 +63,7 @@ if status == 1:
 
         #ControlNet - Deforum
         "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/CiaraRowles/TemporalNet2/resolve/main/temporalnetversion2.safetensors -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o temporalnetversion2.safetensors",
-        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/CiaraRowles/TemporalNet2/resolve/main/temporalnetversion2.yaml -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o temporalnetversion2.yam",
+        "aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/CiaraRowles/TemporalNet2/resolve/main/temporalnetversion2.yaml -d /kaggle/working/stable-diffusion-webui/extensions/sd-webui-controlnet/models -o temporalnetversion2.yaml",
 
         
         #"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/CiaraRowles/TemporalNet2/resolve/main/temporalnetversion2.safetensors -d /kaggle/working/stable-diffusion-webui/models/ControlNet -o temporalnetversion2.safetensors",
