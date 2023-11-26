@@ -24,9 +24,9 @@ if status == 1:
 
     
     #current_dir = os.getcwd()  # Получить текущую директорию
-    #folder_path4 = os.path.join(current_dir, "extensions", "multidiffusion-upscaler-for-automatic1111")  # Создать путь к новой папке
+    #folder_path4 = os.path.join(current_dir, "extensions", "TemporalKit")  # Создать путь к новой папке
     #os.makedirs(folder_path4, exist_ok=True)  # Создать папку
-    #repo_url = "https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111.git"
+    #repo_url = "https://github.com/CiaraStrawberry/TemporalKit.git"
     #subprocess.run(["git", "clone", repo_url, folder_path4])  # Клонировать репозиторий
 
     current_dir = os.getcwd()  # Получить текущую директорию
