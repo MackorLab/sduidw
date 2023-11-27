@@ -31,7 +31,7 @@ if status == 1:
     subprocess.run(["git", "clone", repo_url, folder_path5])  # Клонировать репозиторий
 
     current_dir = os.getcwd()  # Получить текущую директорию
-    folder_path8 = os.path.join(current_dir, "extensions", "sd-webui-controlnet-TemporalNet-API.git")  # Создать путь к новой папке
+    folder_path8 = os.path.join(current_dir, "extensions", "sd-webui-controlnet-TemporalNet-API")  # Создать путь к новой папке
     os.makedirs(folder_path8, exist_ok=True)  # Создать папку
     repo_url = "https://github.com/CiaraStrawberry/sd-webui-controlnet-TemporalNet-API.git"
     subprocess.run(["git", "clone", repo_url, folder_path8])  # Клонировать репозиторий
