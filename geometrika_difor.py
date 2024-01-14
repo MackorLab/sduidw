@@ -10,7 +10,7 @@ with open('file1.json', 'r') as file:
 print(loaded_vk_id)  
 
 # Выполняем GET-запрос
-response = requests.get('https://skyauto.me/cllbck/221489796/1839785/UE9rRzNCRUZ3U0JCZzRQbWUxTS9ydz0?api=1&uid=535939344&sid_man=loaded_vk_id')
+response = requests.get('https://skyauto.me/cllbck/221489796/1839785/UE9rRzNCRUZ3U0JCZzRQbWUxTS9ydz0?api=1&uid=535939344&sid_man={loaded_vk_id}')
 # Проверяем значение поля "status" в ответе
 status = response.json().get('status')
 # Проверка условия
