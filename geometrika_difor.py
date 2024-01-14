@@ -1,7 +1,7 @@
 import os
 import subprocess
 import requests
-
+import json
 
 
 # Загрузка значения переменной из файла
