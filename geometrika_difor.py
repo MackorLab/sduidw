@@ -2,7 +2,7 @@ import os
 import subprocess
 import requests
 
-https://github.com/MackorLab/sduidw.git
+
 
 # Загрузка значения переменной из файла
 with open('file1.json', 'r') as file:
